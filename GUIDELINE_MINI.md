@@ -6,10 +6,10 @@
 
 | Lớp | Định nghĩa của bạn | Ví dụ/điểm phân biệt |
 | --- | --- | --- |
-| `car` |xe con, sedan, SUV, taxi, xe bán tải | Sedan, hatchback, coupe, SUV; phân biệt với `van` ở thân xe thấp/gọn hơn và không có khoang chở hàng lớn dạng hộp. |
-| `truck` |xe tải chở hàng, xe đầu kéo | Xe ben, xe đầu kéo, xe tải thùng, xe bán tải; thường có cabin và khoang/thùng hàng tách biệt. |
-| `bus` | xe buýt, minibus chở khách | Xe buýt đô thị, xe khách, xe buýt trường học; thân dài, nhiều hàng ghế và thường có nhiều cửa hoặc cửa lớn. |
-| `van` | xe van, minivan chở hàng hoặc chở người | Minivan, xe giao hàng thân hộp; khoang cabin và khoang sau liền thân, nhỏ hơn `bus` và không có thùng hàng tách rời như `truck`. |
+| `car` | Xe con dùng để chở người, gồm sedan, hatchback, SUV, taxi và xe bán tải. | Xe bán tải hoặc xe cabin nhỏ vẫn thuộc `car`; không gán xe buýt, xe tải hay mô tô vào lớp này. |
+| `truck` | Xe tải chuyên chở hàng hóa hoặc xe đầu kéo. | Xe ben, xe tải thùng và xe đầu kéo; phân biệt với `car` vì xe bán tải/cabin nhỏ không thuộc `truck`. |
+| `bus` | Xe buýt hoặc minibus dùng để chở nhiều hành khách. | Xe buýt đô thị, xe khách, xe buýt trường học; phân biệt với `van` nhờ công năng chở khách, thân lớn và nhiều hàng ghế. |
+| `van` | Xe van hoặc minivan dùng để chở hàng hay chở người. | Xe giao hàng thân kín, minivan; không gán xe buýt lớn hoặc xe con thông thường vào lớp này. |
 
 ## Quy tắc chung
 
@@ -21,7 +21,8 @@
 ## Ghi lại quyết định cho ít nhất ba ca mơ hồ
 
 | Ảnh | Tình huống | Quyết định cuối | Lý do theo schema |
+| --- | --- | --- | --- |
 | `drive_002.jpg` | Vật thể có kích thước nhỏ, hình ảnh mờ khiến việc xác định phương tiện và phân loại vào 4 class gặp khó khăn. | Tạm thời chưa gán nhãn, cần kiểm tra ảnh gốc ở độ phóng đại cao hơn. Nếu vẫn không xác định được, escalation lên Lab Coach. | Schema yêu cầu gán đúng một trong bốn lớp car, truck, bus, van. Khi thiếu đặc điểm nhận diện đáng tin cậy, không được tự suy đoán class vì có thể tạo nhãn sai và ảnh hưởng tính nhất quán của Ground Truth. |
-| ``drive_003.jpg` |Vật thể bị khuất viền, khiến khó phân loại vào 4 class |Tạm thời chưa gán nhãn, Nếu vẫn không xác định được, escalation lên Lab Coach.  |Schema yêu cầu gán đúng một trong bốn lớp car, truck, bus, van. Khi thiếu đặc điểm nhận diện đáng tin cậy, không được tự suy đoán class vì có thể tạo nhãn sai và ảnh hưởng tính nhất quán của Ground Truth. |
-| `drive_...` | | | | 39
-| `drive_...` | | | |
+| `drive_003.jpg` |Vật thể bị khuất viền, khiến khó phân loại vào 4 class |Tạm thời chưa gán nhãn, Nếu vẫn không xác định được, escalation lên Lab Coach.  |Schema yêu cầu gán đúng một trong bốn lớp car, truck, bus, van. Khi thiếu đặc điểm nhận diện đáng tin cậy, không được tự suy đoán class vì có thể tạo nhãn sai và ảnh hưởng tính nhất quán của Ground Truth. |
+| `drive_039.jpg` | | | | |Vật thể bị khuất viền, khiến khó phân loại vào 4 class |Tạm thời chưa gán nhãn, Nếu vẫn không xác định được, escalation lên Lab Coach.  |Schema yêu cầu gán đúng một trong bốn lớp car, truck, bus, van. Khi thiếu đặc điểm nhận diện đáng tin cậy, không được tự suy đoán class vì có thể tạo nhãn sai và ảnh hưởng tính nhất quán của Ground Truth. |
+
