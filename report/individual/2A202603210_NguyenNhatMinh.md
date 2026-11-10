@@ -7,7 +7,7 @@
 - Email: nguyennhatminh140@gmail.com
 - Lớp: 2A C304
 - Link repo bài làm: <https://github.com/nminnnnn/K5-L2A-DAY02-NguyenNhatMinh-2A202603210-ObjectDetection>
-- Link Colab đã dùng: <https://colab.research.google.com/github/nminnnnn/K5-L2A-DAY02-NguyenNhatMinh-2A202603210-ObjectDetection/blob/main/notebooks/day2_annotation_to_yolo.ipynb>
+- Link Colab đã dùng: https://colab.research.google.com/drive/157b-VRBRe3CLdCEShjp5u-HxEuxVOMxt?usp=sharing
 
 ## 2. Schema và mini guideline
 
@@ -42,14 +42,14 @@ Lần đầu chạy checker trên PowerShell, chương trình báo `UnicodeEncod
 
 | Chỉ số | Trước sửa | Sau sửa nếu có |
 |---|---:|---:|
-| TP | 446 | Chưa rework |
-| FP | 434 | Chưa rework |
-| FN | 207 | Chưa rework |
-| Precision | 0.5068 | Chưa rework |
-| Recall | 0.6830 | Chưa rework |
-| F1 | 0.5819 | Chưa rework |
-| mean_iou_of_matches | 0.8500 | Chưa rework |
-| passed | `false` | Chưa rework |
+| TP | 446 | 446 |
+| FP | 434 | 434 |
+| FN | 207 | 207|
+| Precision | 0.5068 | 0.5068k |
+| Recall | 0.6830 | 0.6830 |
+| F1 | 0.5819 | 0.5819 |
+| mean_iou_of_matches | 0.8500 | 0.8500 |
+| passed | `false` | false |
 
 Kết quả đầy đủ nằm tại [`outputs/annotation_evaluation.json`](../../outputs/annotation_evaluation.json). Mean IoU đạt `0.8500`, cao hơn yêu cầu `0.70`, nghĩa là những box đã ghép cặp nhìn chung có vị trí khá gần nhau. Tuy nhiên, F1 chỉ đạt `0.5819`, thấp hơn yêu cầu `0.80`, nên kết quả chung vẫn là `false`.
 
